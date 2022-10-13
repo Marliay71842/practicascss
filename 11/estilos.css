@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+    color: rgba(3,48,1,1);
+}
+body{
+    
+    color:  rgba(84,99,0,1);
+    animation: baa 15s ease 0s;
+    animation-iteration-count: infinite;
+    font-size: 20px;
+    font-family: 'Blaka Hollow', cursive;
+    align-items: center;
+    justify-content: center;
+}
+
+#Resultado{
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,5fr);
+    }
+    #sexoenlaplaya{
+        color: rgba(78, 199, 255, 0.863);
+        background: rgb(3,48,1);
+        background: linear-gradient(90deg, rgba(3,48,1,1) 0%, rgba(84,99,0,1) 100%);
+        border-radius: 20px;
+        padding: 20px;
+    }
+@keyframes baa{
+0%{
+    background: url(img/1.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;       /* Primer fotograma */
+    }
+20%{
+    background: url(img/2.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;        /* Segundo fotograma */
+    
+    }
+40%{
+    background: url(img/3.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;      /* Último fotograma */
+    }
+60%{
+    background: url(img/4.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;      /* Último fotograma */
+    }
+70%{
+    background: url(img/79d.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;   /* Último fotograma */
+    }
+80%{
+    background: url(img/5.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;            /* Último fotograma */
+    }
+100%{
+    background: url(img/6.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;          /* Último fotograma */
+    }
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(84,99,0);
+    padding: 20px 50px;
+    border: 3px solid rgba(3,48,1,1) ;
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+}
+
+.button::before,
+.button::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s ease-in;
+}
+
+.button::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}

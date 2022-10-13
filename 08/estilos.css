@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Vampiro One', cursive;
+    background: rgb(197,244,234);
+background: linear-gradient(90deg, rgba(197,244,234,1) 0%, rgba(135,133,255,1) 50%, rgba(65,168,250,1) 100%);
+
+}
+.cajita{
+border-radius: 10%;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    text-align: justify;
+    width: 400px;
+    height: 200px;
+    background: rgb(244,173,255);
+background: linear-gradient(90deg, rgba(244,173,255,1) 0%, rgba(114,113,162,1) 50%, rgba(193,212,228,1) 100%);
+}
+span{
+    color: #82e0ff;
+    text-shadow: 0 0 5px black;
+}
+.cajita:hover{
+    transform: scale(1.05);
+    border: 2px double #3673e4 ;
+}

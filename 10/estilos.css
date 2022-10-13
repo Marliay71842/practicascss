@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+}
+body{
+    color: #65233b;
+    background: rgb(251,201,201);
+    background: radial-gradient(circle, rgba(251,201,201,1) 0%, rgba(214,0,0,1) 100%);
+font-family: 'Devonshire', cursive;
+text-align: center;
+
+}
+#Resultado{
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(200px, auto) ;
+    gap: 20px;
+    }
+    .photos{
+        background: rgb(251,201,201);
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+
+
+
+    .button{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 25px;
+        color: #65233b;
+        padding: 20px 50px;
+        border: 3px solid #65233b;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .button::before,
+    .button::after{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: inherit;
+        transition: all .5s ease-in;
+    }
+    
+    .button::before{
+        top: -15px;
+        left: -15px;
+        border-width: 3px 0 0 3px;
+    }
+    
+    .button::after{
+        bottom: -15px;
+        right: -15px;
+        border-width: 0 3px 3px 0;
+    }
+    
+    .button:hover::before,
+    .button:hover::after{
+        width: calc(100% + 27px);
+        height: calc(100% + 27px);
+    }
